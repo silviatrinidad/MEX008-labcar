@@ -1,4 +1,95 @@
-@font-face {
+* {
+	margin: 0;
+    padding: 0;
+    /*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; */
+}
+
+.cabecera-barra{
+    font:13px Arial, Helvetica, sans-serif;
+}
+ 
+.cabecera-barra .cabecera-separador{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+ 
+/* Logotipo */
+ 
+.cabecera-separador{
+    float: left;
+    margin: 0;
+}
+
+ 
+/* barra 1*/
+ 
+.cabecera-barra .cabecera-barra-1{
+    background-color:#f7f7f7;
+    box-shadow:0 1px 1px #ccc;
+    padding: 20px 40px;
+    height: 80px;
+    color: #0e0c0c;
+    box-sizing: border-box;
+}
+ 
+.cabecera-barra .cabecera-barra-1 a {
+    color: #0a0a0a;
+    text-decoration: none;
+}
+ 
+.cabecera-barra .cabecera-barra-1 nav {
+    font:14px Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    float: right;
+    margin: 0 0 0 60px;
+    padding: 0;
+}
+ 
+.cabecera-barra .cabecera-barra-1 nav a{
+    display: inline-block;
+    padding: 0 5px;
+    opacity: 0.9;
+    text-decoration:none;
+    line-height: 1;
+}
+ 
+.cabecera-barra .cabecera-barra-1 nav a:hover {
+    opacity: 1;
+    border-radius: 2px;
+    background-color: #f7b617;
+    padding: 8px 12px;
+}
+
+@media all and (max-width: 600px) {
+ 
+    .cabecera-barra .cabecera-barra-1{
+        padding:20px 0;
+    }
+ 
+    .cabecera-barra .cabecera-barra-1 h1 {
+        float: none;
+        margin: -8px 0 2px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1;
+    }
+ 
+    .cabecera-barra .cabecera-barra-1 nav {
+        margin: 0;
+        float: none;
+        font-size:13px;
+    }
+ 
+    .cabecera-barra .cabecera-barra-1 nav a.activo {
+        padding: 5px 8px;
+    }
+
+
+
+/*@font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?lwlfc0');
     src:  url('../fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
@@ -10,7 +101,7 @@
   }
   
   [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
+    use !important to prevent issues with browser extensions that change fonts
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -19,7 +110,7 @@
     text-transform: none;
     line-height: 1;
   
-    /* Better Font Rendering =========== */
+     Better Font Rendering ===========
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -38,4 +129,6 @@
   }
   .icon-linkedin2:before {
     content: "\eaca";
-  }
+  } */
+
+  
