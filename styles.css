@@ -2,18 +2,16 @@
 	margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: #333;
+    /*color: #333;*/
     font-size: 1rem;
-    line-height: 1em;
-    background:#f8f8f8;
-}
-p {
-    margin-bottom:1.6em;
+    /*line-height: 1em; */
+    
 }
 
+
 .container {
-    width: 85%;
-    max-width:850px;
+    width: 100%;
+    max-width:1800px;
     margin: 0 auto;
 }
 
@@ -23,8 +21,7 @@ p {
     background: #f8f8f8;
     color: #333;
     padding: 2rem 0;
-
-    position: fixed;
+    /*position: fixed; */
     left:0;
     top:0;
     right: 0;
@@ -40,11 +37,11 @@ p {
     flex-wrap: wrap;
 }
 .logo {
-    color: #333;
+    margin: 15px;
     letter-spacing: 1rem;
     font-size:1.2em;
+    color:white;
 }
-
 #menu-icon {
     display:none;
 }
@@ -65,12 +62,35 @@ p {
 .navigation ul li a:hover {
     background: #ebb60a;
 }
-.main {
-    padding: 13rem;
-}
+
 /*------------------------------
 ---------section HERO---------------*/
 
+.banner-hero {
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url(images/taxi.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height:100vh;
+}
+#text-hero-movil {
+    display:none;
+}
+#box-hero {
+    align-self: right;
+    background:#f7b617;
+    color: white;
+    border-radius: 10px;
+    padding: 5rem;
+    margin: 5px;
+    text-align: left;
+    letter-spacing: 0.2em;
+    line-height: 2em;    
+}
 
 
 /*------------------------------
@@ -87,8 +107,10 @@ p {
 
 @media only screen and (max-width:767px) {
     /*MENU HAMBURGUESA*/
+    .logo {
+        margin: 15px; }
     .boton {
-        margin: 0 auto;
+        margin: 5px 25px;
         display: block;
         width: 40px;
         height: 36px;
@@ -106,7 +128,6 @@ p {
         background: white;
         margin-top:7px;
     }
-    
     label {
       cursor: pointer;
     }
@@ -135,4 +156,14 @@ p {
     #menu-icon:checked + .navigation {
       display: block;
     }
+
+/* BANNER-HERO */
+#text-hero p {
+    display:none;
+}
+#text-hero-movil {
+    align-self: right;
+    color: #f8f8f8;
+}
+
 }
