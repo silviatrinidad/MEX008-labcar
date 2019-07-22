@@ -5,6 +5,7 @@
     color: #333;
     font-size: 1rem;
     line-height: 1em;
+    background:#f8f8f8;
 }
 p {
     margin-bottom:1.6em;
@@ -110,12 +111,19 @@ p {
     .navigation {
         display: none;
         text-align: center;
-        background: #e9e5d9;
-        padding:10px 0;
+        padding:10px;
     }
     .navigation #menu li a {
         color: #333333;
-        padding: 10px 0;
+        padding: 3rem 2rem;
+        display: block;
+        text-align: center;
+    }
+    .navigation:hover + #menu li a {
+        background: #ebb60a;
+        padding:5rem;
+        transition: all 0.4s linear;
+        border-radius:5px; 
         display: block;
     }
 
