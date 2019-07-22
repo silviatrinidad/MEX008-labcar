@@ -109,6 +109,7 @@
     background-position: center bottom;
     background-size: cover;
     background-attachment: scroll;
+    
 }
 #celular {
     float: left;
@@ -156,7 +157,8 @@
     display:flex;
     align-items: center;
     justify-content: flex-start;
-    height:75vh;
+    height:85vh;
+    flex-wrap: wrap;
 }
 #box-map {
     border: 1px solid white;
@@ -168,12 +170,13 @@
     border: 2px solid whiter;
     padding: 1rem;
     margin: 25px auto;
+    line-height: 3em;
 }
 
 /*------------------------------
 ---------FOOTER---------------*/
 .footer {
-    background: rgb(179, 156, 156);
+    background: #2b2b2b;
     padding: 4rem 0;
     text-align: center;
     margin-top: 2rem;
@@ -255,8 +258,13 @@
 #text-info p {
     display:none;
 }
+/*BANNER CONDUCE*/
 
 
-
+/*BANNER TARIFA*/
+#banner-tarifa {
+    height: 100vh;
+    display: flex;
+}
 
 }
