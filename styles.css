@@ -1,176 +1,178 @@
 * {
 	margin: 0;
     padding: 0;
-    
-    /*-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box; */
+    font-family: sans-serif;
 }
 
-.cabecera-barra{
-    font:13px Arial, Helvetica, sans-serif;
-    
-}
- 
-.cabecera-barra .cabecera-separador{
-    max-width: 1200px;
-    text-align: center;
+header {
+    display:block;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    height: auto;
+    padding-bottom: 3vh;
     margin: 0 auto;
-}
- 
-/* Logotipo */
- 
-.cabecera-separador{
-    float: left;
-    margin: 0;
-}
-
- 
-/* barra 1*/
- 
-.cabecera-barra .cabecera-barra-1{
-    background-color:#f7f7f7;
     box-shadow:0 1px 1px #ccc;
-    padding: 20px 40px;
-    height: 80px;
-    color: #0e0c0c;
     box-sizing: border-box;
 }
- 
-.cabecera-barra .cabecera-barra-1 a {
-    color: #0a0a0a;
-    text-decoration: none;
+nav {
+    width: 100vw;
+    margin: 15px;
+    display: flex;
+    padding: 10px;
 }
- 
-.cabecera-barra .cabecera-barra-1 nav {
-    font:14px Arial, Helvetica, sans-serif;
-    line-height: 40px;
-    float: right;
-    margin: 0 0 0 60px;
-    padding: 0;
+.menu-desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 20px;
 }
- 
-.cabecera-barra .cabecera-barra-1 nav a{
-    display: inline-block;
-    padding: 0 5px;
-    opacity: 0.9;
-    text-decoration:none;
-    line-height: 1;
-}
- 
-.cabecera-barra .cabecera-barra-1 nav a:hover {
-    opacity: 1;
-    border-radius: 2px;
-    background-color: #f7b617;
-    padding: 8px 12px;
-}
-
-/*banner-uno*/
-.banner-uno {
-    display:flex;
-    background: url("images/taxi.jpg");
-    width: 100%;
-    height: 85vh;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0px 0px;
-}
-
-.hero {
-    background: #f7b617;
-    margin: 50px;
+.menu-desktop li {
+    list-style: none; 
+    display: inline;
     
 }
-.content-uno {
-    background: #f7b617;
-    height: 75vh;
+.menu-desktop a {
+    text-decoration: none;
+    display: inline;
+    margin: 2.5rem;
+    color: #191C26;
+    
 }
-
-
-.banner-dos{
-    display:flex;
-    background: url("images/conduce.jpg");
-    width: 100%;
-    height: 75vh;
+.menu-desktop a:hover {
+    color: rgb(12, 12, 11);
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 7px;
+    background-color: #f7b617;
+    padding: 25px;
+    
+}
+/*----------------------------------
+-----BANNER HERO ----------------*/
+.banner-hero{
+    background-image: url(images/taxi.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    margin: 0px 0px;
+    background-attachment: scroll;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display:flex;
 }
+#box-hero {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    
+    color:white;
+    background-color: #f7b617;
+    margin: 10em;
+    border-radius: 10px;
+}
+#text-hero {
+    text-align: left;
+    margin: 20px;
+}
+h3 {
+    margin: 15px;
+}
+.button1 {
+    margin: 15px;
+    padding: 10px;
+    background:white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+/*----------------------------------
+-----BANNER INFO ----------------*/
+.banner-info{
+    float: inline-start;
+    justify-content: flex-start;
+    background-color: #f7b617;
+    color: white;
+    padding: 2rem;
+    width: 100vw;
+    height: 75vh;
+    background-attachment: scroll;
+    margin: 0;
+}
+#celular{
+    justify-content: flex-start;
+    border: 2px solid white;
+    border-radius: 3px;
+    float:left;
+    padding: 25px 20px;
+}
+#text-info{
+    float: right;
+    width: 50vw;
+    margin: 65px;
+    padding: 10px;
+}
+/*----------------------------------
+-----BANNER CONDUCE ----------------*/
+.banner-conduce{
+    background-image: url(images/conduce.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display:flex;
+}
+#box-conduce {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    background-color: #16161585;
+    margin: 0;
+}
+#text-conduce {
+    text-align: left;
+    margin: 20px;
+}
+.button2 {
+    margin: 15px;
+    padding: 10px;
+    background: #f7b617;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/*----------------------------------
+-----BANNER CONDUCE ----------------*/
+.banner-tarifa {
+float: inline-start;
+    background-color: #f7b617;
+    color: white;
+    padding: 2rem;
+    width: 100vw;
+    height: 80vh;
+    background-attachment: scroll;
+    margin: 0;
+}
+#map {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: right;
+    width: 90%;
+}
+#text-tarifa{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    
+}
+
 .footer {
     background: #2b2b2b;
-    color: white;
+    height: 80vw;
 }
-
-@media all and (max-width: 600px) {
- 
-    .cabecera-barra .cabecera-barra-1{
-        padding:20px 0;
-    }
- 
-    .cabecera-barra .cabecera-barra-1 h1 {
-        float: none;
-        margin: -8px 0 2px;
-        text-align: center;
-        font-size: 24px;
-        line-height: 1;
-    }
- 
-    .cabecera-barra .cabecera-barra-1 nav {
-        margin: 0;
-        float: none;
-        font-size:13px;
-    }
- 
-    .cabecera-barra .cabecera-barra-1 nav a.activo {
-        padding: 5px 8px;
-    }
-
-
-
-/*@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?lwlfc0');
-    src:  url('../fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?lwlfc0') format('truetype'),
-      url('../fonts/icomoon.woff?lwlfc0') format('woff'),
-      url('../fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    use !important to prevent issues with browser extensions that change fonts
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-     Better Font Rendering ===========
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-play3:before {
-    content: "\ea1c";
-  }
-  .icon-facebook:before {
-    content: "\ea90";
-  }
-  .icon-twitter:before {
-    content: "\ea96";
-  }
-  .icon-appleinc:before {
-    content: "\eabe";
-  }
-  .icon-linkedin2:before {
-    content: "\eaca";
-  } */
-
-  
