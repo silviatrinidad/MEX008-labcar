@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>LABCAR</title>
 </head>
+
 <body>
+    <!--HEADER-->
     <header class="header">
         <div class=" container logo-nav-container">
             <!--<a href="#" class="logo">Lab&lt;ar</a>-->
-            <img src="images/logo.png" class= "logo" alt="logo-labcar">
+            <img src="images/logo.png" class="logo" alt="logo-labcar">
             <label for="menu-icon">
                 <div class="boton">
                     <span></span>
@@ -19,7 +22,7 @@
                     <span></span>
                 </div>
             </label>
-            <input type="checkbox" id="menu-icon" checked/>
+            <input type="checkbox" id="menu-icon" checked />
             <nav class="navigation">
                 <ul id="menu">
                     <li><a href="#">Viaja</a></li>
@@ -29,27 +32,77 @@
             </nav>
         </div>
     </header>
-
+    <!--INICIO SECCIONES-->
     <main class="main">
-        <!--<section class="container">-->
-            <div class="banner-hero">
-                <div id="box-hero">
-                    <div id="text-hero">
-                        <h3 id="text-hero-movil"> Comienza a viajar con Lab&lt;ar </h3>
-                        <p>Disfruta del viaje</p>
-                        <p>Eres dueño de tu tiempo</p>
-                        <p>Viaja con Lab&lt;ar</p>
-                        <p> REGISTRATE</p>
-                        <p> o bien</p>
-                        <p>Conviertete en un conductor</p>
-                    </div>
+        <!-- SECCION HERO-->
+        <section class="banner-hero">
+            <div id="box-hero">
+                <div id="text-hero">
+                    <p>Disfruta del viaje</p>
+                    <p>Eres dueño de tu tiempo</p>
+                    <p>Viaja con Lab&lt;ar</p>
+                    <p> REGISTRATE</p>
+                    <p> - o bien - </p>
+                    <p>Conviertete en un conductor</p>
+                    <h3 class="text-hero-movil"> Comienza a viajar con Lab&lt;ar </h3>
+                    <h4 class="text-hero-movil"> Descarga la app</h4>
                 </div>
             </div>
-        <!--</section>-->
+        </section>
+        <!--SECCION INFO-->
+        <section class="banner-info">
+            <div id="img-info">
+                    <img src="images/celular.png" id="celular" alt="celphone">
+                <div id="text-info">
+                    <p>Descarga la nueva app</p>
+                    <p>La versión actualizada de LabCar
+                        está llena de nuevas funciones para 
+                    llegar a donde quieras aún más fácil 
+                y rápido.</p>
+                    <p>Con solo tocar un botón, un auto 
+                        llega justo a tu ubicación. Súbete y 
+                        no te preocupes: tu conductor sabe 
+                        exactamente a dónde ir.</p>
+                    
+                    <h3 class="text-hero-movil"> La nueva app</h3>
+                    <h4 class="text-hero-movil">Llega a tu destino más rápido</h4>
+                </div>
+            </div>
+        </section>
+        <!--SECCION CONDUCE-->
+        <section class="banner-conduce">
+                <div id="box-conduce">
+                    <div id="text-conduce">
+                        <p>Conduce cuando quieras</p>
+                        <p>LabCar es una opción flexible para alcanzar
+                            tus metas financieras.</p>
+                            <p>CONVIÉRTETE EN CONDUCTOR</p>
+                    </div>
+                </div>
+            </section>
+             <!--SECCION TARIFA-->
+        <section class="banner-tarifa">
+                <div id="box-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7972222370213!2d-99.16542035020461!3d19.4211654868265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff375cae6ed7%3A0xb4572b930d352c69!2sCOW+Roma!5e0!3m2!1ses-419!2smx!4v1563828098801!5m2!1ses-419!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div id="box-tarifa">
+                        <h2>Tarifas</h2>
+                        <h3>Consulte las tarifas LabCar aquí</h3>
+                        <div>
+                        <img src="images/circulo.png"></i><input type="text" placeholder="Ingrese su punto de partida">
+                        </div>
+                        <div>
+                        <img src="images/flecha.png"><input type="text" placeholder="Ingrese su destino">
+                        </div>
+                        <div class="route-button">
+                        <input type="button" value="¡TRAZAR RUTA!" class="buttons">
+                        </div>
+            </section>
     </main>
     <footer class="footer">
         <div clas="container">
         </div>
     </footer>
 </body>
+
 </html>

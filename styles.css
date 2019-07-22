@@ -77,7 +77,7 @@
     background-attachment: scroll;
     height:100vh;
 }
-#text-hero-movil {
+.text-hero-movil {
     display:none;
 }
 #box-hero {
@@ -92,6 +92,83 @@
     line-height: 2em;    
 }
 
+/*------------------------------
+---------section INFO---------------*/
+.banner-info {
+    background-color: #f7b617;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    height:75vh;
+    
+}
+#image-info {
+    height: 70%;
+    margin: 25px;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: scroll;
+}
+#celular {
+    float: left;
+    align-self: auto;
+    padding: 3rem 3rem;
+    /*border: 2px solid white;
+    ;*/
+}
+#text-info {
+    margin: 0 auto;
+    padding: 5rem;
+}
+/*------------------------------
+---------SECCION CONDUCE---------------*/
+.banner-conduce {
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url(images/conduce.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height:100vh;
+}
+.text-hero-movil {
+    display:none;
+}
+#box-conduce {
+    height: auto;
+    align-self: right;
+    background:#070707da;
+    color: white;
+    padding: 5rem;
+    margin: 5px;
+    text-align: left;
+    letter-spacing: 0.2em;
+    line-height: 2em;    
+}
+/*------------------------------
+---------SECCION TARIFA----------*/
+.banner-tarifa {
+    background-color: #f7b617;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    height:75vh;
+}
+#box-map {
+    border: 1px solid white;
+    padding: 1rem;
+    margin:15px auto;
+}
+#box-tarifa{
+    float: right;
+    border: 2px solid whiter;
+    padding: 1rem;
+    margin: 25px auto;
+}
 
 /*------------------------------
 ---------FOOTER---------------*/
@@ -158,12 +235,28 @@
     }
 
 /* BANNER-HERO */
+#box-hero {
+    align-self: right;
+    padding: 2rem;
+    margin: 3px;
+    text-align: left;
+    letter-spacing: 0.2em;
+    line-height: 2em;    
+}
 #text-hero p {
     display:none;
 }
-#text-hero-movil {
+.text-hero-movil {
+    display: block;
     align-self: right;
     color: #f8f8f8;
 }
+/*BANNER-INFO*/
+#text-info p {
+    display:none;
+}
+
+
+
 
 }
